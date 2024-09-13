@@ -12,7 +12,7 @@ class Task(Cog_Extension):
 
         async def time_interval():
             await self.bot.wait_until_ready()
-            self.channel = self.bot.get_channel(1280930890578526356)
+            self.channel = self.bot.get_channel("Your Channel ID")
             while not self.bot.is_closed():
                 now_time = datetime.datetime.now().strftime('%H%M')
                 with open('setting.json', 'r', encoding='utf8') as jfile:
